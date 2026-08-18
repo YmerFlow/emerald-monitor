@@ -22,3 +22,15 @@ And, of course you can export the logs using pandas export options. For example:
   - ```monitor_info.to_csv(<output file path>, index=False)```
 
 See the example usage notebook for a more detailed out line of the usage
+
+## Running the tests
+
+Install the test extra and run pytest from the repository root:
+
+```
+pip install -e .[test]
+pytest
+```
+
+The tests use a short sampling interval and run headlessly (matplotlib is pinned to the Agg
+backend), so the whole suite takes a few seconds and never opens a plot window.
