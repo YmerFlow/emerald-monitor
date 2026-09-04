@@ -4,13 +4,13 @@ import os, sys
 from setuptools import setup, find_packages
 
 setup(name='emerald_monitor',
-      version='0.0.21',
+      version='0.0.22',
       url='https://github.com/emerald-geomodelling/emerald-monitor',
       author='Benjamin Bloss',
       author_email='bb@emrld.no',
       description='Monitoring utility',
       install_requires=["psutil",
-                        "numpy==1.26.4",
+                        "numpy",
                         "pandas",
                         "matplotlib",
                         # "time",
